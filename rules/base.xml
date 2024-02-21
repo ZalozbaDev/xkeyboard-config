@@ -3798,7 +3798,17 @@
             </languageList>
           </configItem>
         </variant>
-        <variant>
+         <variant>
+          <configItem>
+            <name>sorbian_standard</name>
+            <description>Sorbian Standard</description>
+            <languageList>
+              <iso639Id>dsb</iso639Id>
+              <iso639Id>hsb</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+       <variant>
           <configItem>
             <name>ro</name>
             <description>Romanian (Germany)</description>

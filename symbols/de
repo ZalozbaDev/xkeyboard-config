@@ -662,6 +662,20 @@ xkb_symbols "dsb_qwertz"
 };
 
 partial alphanumeric_keys
+xkb_symbols "sorbian_standard" {
+
+    // this replicates the "Sorbian Standard" keyboard layout
+    // dead_caron is mapped onto tilde, for all letters with "hacek"
+    // l with stroke mapped onto BKSL, use RALT to access the default symbols
+
+    include "de(basic)"
+    name[Group1]="Sorbian Standard";
+
+    key <TLDE> { [ dead_caron,  degree,      U2032,      U2033 ] };
+    key <BKSL> { [    lstroke, Lstroke, numbersign, apostrophe ] };
+};
+
+partial alphanumeric_keys
 xkb_symbols "qwerty" {
 
     // This layout should work exactly as a de with the exception
